@@ -16,7 +16,7 @@ def record_audio(duration=10, samplerate=44100):
     sd.wait()  # Wait until recording is finished
     return recording.tobytes()
 
-def main():
+def record_and_save_audio():
     clip_length = 10  # seconds
     samplerate = 44100  # Hz
     start_time = time.time()
@@ -34,4 +34,4 @@ def main():
         print("Recording stopped.")
 
 if __name__ == "__main__":
-    main()
+    record_and_save_audio()
